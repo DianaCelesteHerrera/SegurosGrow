@@ -86,8 +86,7 @@
     
 })(jQuery);
 
-
-// send form
+// send email
 const btn = document.getElementById('button');
 
 document.getElementById('form')
@@ -102,9 +101,15 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Correo enviado';
-      alert('Tu correo se envio correctamente a SegurosGrow');
+      alert('Tu correo se envió correctamente a SegurosGrow');
+      
+      setTimeout(() => {
+        window.location.href = 'https://seguros-grow.vercel.app/feature.html'; 
+      }, 1000); 
+      
     }, (err) => {
       btn.value = 'Enviar';
       alert(JSON.stringify(err));
     });
 });
+

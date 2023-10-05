@@ -32,6 +32,13 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+ 
+    <!-- Send Message -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    emailjs.init('FgfDFx_eXBx8qpFmw')
+    </script>
+     <!-- End  -->
 </head>
 
 <body>
@@ -42,6 +49,12 @@
     </div>
     <!-- Spinner End -->
 
+
+    <!-- ChatBot -->
+    <div class="chatbot-button">
+        <a href="https://t.me/TuChatbot" target="_blank">ChatBot 🤖</a>
+    </div>
+    <!-- End -->
 
     <!-- Topbar Start -->
     <div class="container-fluid bg-primary text-white d-none d-lg-flex">
@@ -85,16 +98,9 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Conoce tu agencia</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                <a href="feature.html" class="dropdown-item">Características</a>
                                 <a href="team.html" class="dropdown-item">Nuestro equipo</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonios</a>
-                                <a href="quote.html" class="dropdown-item">Cotización seguros</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
-                    </div>
-                    <div class="ms-auto d-none d-lg-block">
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Registrate</a>
                     </div>
                 </div>
             </nav>
@@ -103,15 +109,16 @@
     <!-- Navbar End -->
 
 
+
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
-            <h1 class="display-2 text-white mb-4 animated slideInDown">Features</h1>
+            <h1 class="display-2 text-white mb-4 animated slideInDown">Bienvenido</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="#">Inicio</a></li>
                     <li class="breadcrumb-item"><a href="#">Paginas</a></li>
-                    <li class="breadcrumb-item text-primary" aria-current="page">Características</li>
+                    <li class="breadcrumb-item text-primary" aria-current="page">Capacitacion</li>
                 </ol>
             </nav>
         </div>
@@ -122,48 +129,87 @@
     <!-- Features Start -->
     <div class="container-xxl py-5">
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-            <p class="fs-5 fw-medium text-primary">Features</p>
-            <h1 class="display-5 mb-5">Why People Choose Us!</h1>
+            <p class="fs-5 fw-medium text-primary">Capacitacion</p>
+            <h1 class="display-5 mb-5">¡Por qué la gente nos elige!</h1>
         </div>
         <div class="container">
-            <div class="row g-0 feature-row">
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
-                            <img class="img-fluid" src="img/icon/icon-1.png" alt="Icon">
-                        </div>
-                        <h5 class="mb-3">Award Winning</h5>
-                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
-                    </div>
+             
+    <div class="row g-0 feature-row">
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+            <div class="feature-item border h-100 p-5">
+                <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                    <img class="img-fluid" src="img/icon/icon-1.png" alt="Icon">
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
-                            <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon">
-                        </div>
-                        <h5 class="mb-3">Professional Staff</h5>
-                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
-                    </div>
+                <h5 class="mb-3">Premiado</h5>
+                <p class="mb-0">Ganadores de numerosos premios en la industria.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+            <div class="feature-item border h-100 p-5">
+                <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                    <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon">
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
-                            <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon">
-                        </div>
-                        <h5 class="mb-3">Fair Prices</h5>
-                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
-                    </div>
+                <h5 class="mb-3">Personal Profesional</h5>
+                <p class="mb-0">Nuestro personal altamente capacitado está a tu disposición.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+            <div class="feature-item border h-100 p-5">
+                <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                    <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon">
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
-                            <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon">
-                        </div>
-                        <h5 class="mb-3">24/7 Support</h5>
-                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+                <h5 class="mb-3">Precios Justos</h5>
+                <p class="mb-0">Ofrecemos tarifas competitivas y transparentes.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+            <div class="feature-item border h-100 p-5">
+                <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                    <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon">
+                </div>
+                <h5 class="mb-3">Soporte 24/7</h5>
+                <p class="mb-0">Estamos disponibles las 24 horas del día, los 7 días de la semana.</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+
+    <section class="training-section">
+        <h2 class="text-center">Nuestra Capacitación</h2>
+        <p class="text-center">Aprende todo lo que necesitas saber para tener éxito con Seguros Grow.</p>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="img/project-1.jpg" class="card-img-top" alt="Training Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Módulo 1</h5>
+                        <p class="card-text">Aprende los fundamentos de los seguros y nuestro enfoque en el servicio al cliente.</p>
                     </div>
                 </div>
             </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="img/project-2.jpg" class="card-img-top" alt="Training Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Módulo 2</h5>
+                        <p class="card-text">Profundiza en los productos de seguros ofrecidos y cómo presentarlos a los clientes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="img/project-3.jpg" class="card-img-top" alt="Training Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Módulo 3</h5>
+                        <p class="card-text">Domina las herramientas tecnológicas que te ayudarán a tener éxito en tu trabajo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
         </div>
     </div>
     <!-- Features End -->
@@ -174,10 +220,10 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <h4 class="text-white mb-4">Nuestra oficina</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Av Lázaro Cárdenas 2225, Valle Oriente</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>SegurosGrow@gmail.com</p>
                     <div class="d-flex pt-3">
                         <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
                                 class="fab fa-twitter"></i></a>
@@ -190,30 +236,30 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <h4 class="text-white mb-4">Enlaces rápidos</h4>
+                    <a class="btn btn-link" href="">Sobre nosotros</a>
+                    <a class="btn btn-link" href="">Contactanos</a>
+                    <a class="btn btn-link" href="">Nuestros servicios</a>
+                    <a class="btn btn-link" href="">Terminos y condiciones</a>
+                    <a class="btn btn-link" href="">Soporte</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Business Hours</h4>
-                    <p class="mb-1">Monday - Friday</p>
+                    <h4 class="text-white mb-4">Hora de trabajo</h4>
+                    <p class="mb-1">Lunes - Viernes</p>
                     <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Saturday</p>
+                    <p class="mb-1">Sábado</p>
                     <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Sunday</p>
-                    <h6 class="text-light">Closed</h6>
+                    <p class="mb-1">Domingo</p>
+                    <h6 class="text-light">Cerrado</h6>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <h4 class="text-white mb-4">Recibe noticias</h4>
+                    <p>Es gratis.</p>
                     <div class="position-relative w-100">
                         <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Your email">
+                            placeholder="tu correo">
                         <button type="button"
-                            class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -227,12 +273,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-medium text-light" href="#">Your Site Name</a>, All Right Reserved.
+                    &copy; <a class="fw-medium text-light" href="#">SegurosGrow</a>, All Right Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="fw-medium text-light" href="https://htmlcodex.com">HTML Codex</a>
-                    Distributed By <a class="fw-medium text-light" href="https://themewagon.com">ThemeWagon</a>
+                    Designed By <a class="fw-medium text-light" href="https://www.linkedin.com/in/celeste-herrera-hg/">Celeste Herrera</a>
                 </div>
             </div>
         </div>
@@ -256,6 +300,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

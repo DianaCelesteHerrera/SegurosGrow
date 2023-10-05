@@ -606,9 +606,9 @@
 }
 
 .chatbot-button a {
-    font-size: 24px;
+    font-size: 20px;
     color: #fff; 
-    background-color: #00FF00;
+    background-color: lightgreen;
     text-decoration: none;
     display: inline-block;
     padding: 10px 20px;
@@ -621,7 +621,7 @@
     position: absolute;
     background-color: #00FF00;
     color: #fff;
-    font-size: 16px;
+    font-size: 11px;
     padding: 5px 10px;
     border-radius: 5px;
     top: -20px;
