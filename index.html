@@ -32,6 +32,13 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+ 
+    <!-- Send Message -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    emailjs.init('FgfDFx_eXBx8qpFmw')
+    </script>
+     <!-- End  -->
 </head>
 
 <body>
@@ -420,39 +427,26 @@
                 <!-- Send form -->
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <h2 class="mb-4">Consigue una capacitación</h2>
-                    <form action="" method="post">
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre">
-                                    <label for="name">Tu nombre</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="mail" name="mail" placeholder="Tu Email">
-                                    <label for="mail">Tu Email</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Tu celular">
-                                    <label for="mobile">Tu celular</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Escribe tus dudas aquí" id="message" name="message" style="height: 130px"></textarea>
-                                    <label for="message">Dudas</label>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Enviar ahora</button>
-                            </div>
+                    <form id="form">
+                        <div class="field">
+                            <label for="to_name">Nombre:</label>
+                            <input type="text" name="to_name" id="to_name">
                         </div>
+                        <br>
+                        <div class="field">
+                            <label for="message">Mensaje sugerencia: (Quiero capacitarme)</label>
+                            <input type="text" name="message" id="message">
+                        </div>
+                        <br>
+                        <div class="field">
+                            <label for="email_id">Correo electronico:</label>
+                            <input type="text" name="email_id" id="email_id">
+                        </div>
+                        <br>
+                        <input type="submit" id="button" value="Enviar" >
                     </form>
-                </div>
-                
+                  
+                </div> 
             </div>
         </div>
     </div>
